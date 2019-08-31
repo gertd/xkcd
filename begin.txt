@@ -1,0 +1,15 @@
+mkdir dir
+cd dir
+
+npm init
+
+npm install typescript --only=dev
+npm install @types/node --only=dev
+npm install nodemon --only=dev
+npm install ts-node --only=dev
+
+tsc --init 
+
+mkdir src
+touch index.ts
+
