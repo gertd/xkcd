@@ -1,1 +1,10 @@
+# Dependency directory
 node_modules
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Generated js files 
+src/*.js
+lib/*.js

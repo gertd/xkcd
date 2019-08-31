@@ -14,3 +14,5 @@ f.xkcdGetComicForToday().then((resp: any) => {
 f.xkcdGetComicForToday().then((resp: any, body: any) => {
     console.log(resp, body);
 });
+
+
