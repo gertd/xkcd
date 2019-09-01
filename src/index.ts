@@ -1,18 +1,8 @@
 #!/usr/bin/env node
 
-const xkcd = require('../lib/xkcd/api');
-// import * as xkcd from '../lib/xkcd/api'; // NEED TPO FIGURE OUT WHY THIS FAILS THE LAST CALL
+import {DefaultApi} from '../lib/xkcd/api/DefaultApi';
 
-let f = new xkcd.DefaultApi();
-
-console.log(f.xkcdGetComicForToday());
-
-f.xkcdGetComicForToday().then((resp: any) => {
-    console.log(resp);
+let x = new DefaultApi();
+x.xkcdGetComicForToday().then( v => {
+    console.log(v.response, v.body);
 });
-
-f.xkcdGetComicForToday().then((resp: any, body: any) => {
-    console.log(resp, body);
-});
-
-
